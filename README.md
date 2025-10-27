@@ -67,7 +67,7 @@ Actualmente busco especializarme en **ciberseguridad y análisis de datos**, ár
 **Tecnologías:** R, Regresión logística, Redes Neuronales 
 **Rol:** Analista de datos  
 **Resultados:** Modelo predictivo basado en regresión logística con un 85% de precisión.  
-🔗 [Ver repositorio]()
+🔗 [Ver repositorio](https://github.com/YobiObi/Proyecto-Ciencia-de-Datos)
 
 ## Experiencia profesional
 
