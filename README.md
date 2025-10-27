@@ -16,7 +16,7 @@ Tengo experiencia en el desarrollo de soluciones de software y en la gestión t�
 Me caracterizo por mi compromiso, responsabilidad y capacidad de aprendizaje autónomo.  
 Actualmente busco especializarme en **ciberseguridad y análisis de datos**, áreas que considero esenciales para el desarrollo tecnológico seguro de las organizaciones.
 
-## ⚙️ Habilidades técnicas
+## Habilidades técnicas
 - **Lenguajes:** Python, C, Java  
 - **Bases de datos:** SQL, MongoDB  
 - **Herramientas:** Git, GitHub, Control-M, JIRA, Kiuwan  
@@ -24,14 +24,14 @@ Actualmente busco especializarme en **ciberseguridad y análisis de datos**, ár
 - **Sistemas Operativos:** Windows, Linux  
 - **Ciberseguridad:** Análisis de vulnerabilidades, redes, gestión de contraseñas seguras  
 
-## 🌱 Habilidades blandas
+## Habilidades blandas
 - Comunicación efectiva  
 - Trabajo en equipo  
 - Liderazgo y tutoría  
 - Adaptabilidad  
 - Responsabilidad y ética profesional
 
-- ## 💼 Áreas de interés
+- ## Áreas de interés
 - Ciberseguridad y seguridad de la información  
 - Ciencia de datos y análisis predictivo  
 - Infraestructura TI y soporte técnico
@@ -53,7 +53,7 @@ Actualmente busco especializarme en **ciberseguridad y análisis de datos**, ár
 
 ---
 
-### 🏘️ ComuniRed App
+### ComuniRed App
 **Descripción:** Aplicación móvil para conectar comunidades de condominios, villas o edificios, facilitando la comunicación entre directiva, conserjes y residentes.  
 **Tecnologías:** React Native, Node.js, MongoDB, Tailwind  
 **Rol:** Desarrolladora principal y analista de requerimientos  
@@ -62,7 +62,7 @@ Actualmente busco especializarme en **ciberseguridad y análisis de datos**, ár
 
 ---
 
-### 📊 Proyecto de Ciencia de Datos – Predicción de Diabetes Tipo II
+### Proyecto de Ciencia de Datos – Predicción de Diabetes Tipo II
 **Descripción:** Proyecto ganador del 3° lugar en Olimpiadas de Ciencias de Datos (2024).  
 **Tecnologías:** R, Regresión logística, Redes Neuronales 
 **Rol:** Analista de datos  
