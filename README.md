@@ -37,9 +37,9 @@ Actualmente busco especializarme en **ciberseguridad y análisis de datos**, ár
 - Infraestructura TI y soporte técnico
 
 ## 📄 Currículum Vitae
-📎 [Descargar CV actualizado]()
+📎 [Descargar CV actualizado](https://github.com/YobiObi/Mi-portafolio/blob/main/CV_GiovanaOsorio.pdf)
 ## ✉️ Carta de presentación
-📎 [Ver carta de presentación]()
+📎 [Ver carta de presentación](https://github.com/YobiObi/Mi-portafolio/blob/main/Carta_Presentacion_Giovana.pdf)
 
 
 ## Proyectos destacados
