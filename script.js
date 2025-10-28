@@ -1,27 +1,40 @@
+// Añadir recomendación con popup accesible
 function addRecommendation() {
-  // Get the message of the new recommendation
-  let recommendation = document.getElementById("new_recommendation");
-  // If the user has left a recommendation, display a pop-up
-  if (recommendation.value != null && recommendation.value.trim() != "") {
-    console.log("New recommendation added");
-    //Call showPopup here
-showPopup(true);
-    // Create a new 'recommendation' element and set it's value to the user's message
-    var element = document.createElement("div");
-    element.setAttribute("class","recommendation");
-    element.innerHTML = "\<span\>&#8220;\</span\>" + recommendation.value + "\<span\>&#8221;\</span\>";
-    // Add this element to the end of the list of recommendations
-    document.getElementById("all_recommendations").appendChild(element); 
-    
-    // Reset the value of the textarea
+  const recommendation = document.getElementById("new_recommendation");
+  const list = document.getElementById("all_recommendations");
+  if (recommendation && recommendation.value && recommendation.value.trim() !== "") {
+    const el = document.createElement("div");
+    el.className = "recommendation";
+    el.innerHTML = `<span>&#8220;</span>${recommendation.value.trim()}<span>&#8221;</span>`;
+    list.appendChild(el);
     recommendation.value = "";
+    showPopup(true);
   }
 }
 
-function showPopup(bool) {
-  if (bool) {
-    document.getElementById('popup').style.visibility = 'visible'
+function showPopup(show) {
+  const p = document.getElementById("popup");
+  if (!p) return;
+  if (show) {
+    p.classList.add("show");
+    p.setAttribute("aria-hidden", "false");
   } else {
-    document.getElementById('popup').style.visibility = 'hidden'
+    p.classList.remove("show");
+    p.setAttribute("aria-hidden", "true");
   }
 }
+
+// Año dinámico en el footer
+document.addEventListener("DOMContentLoaded", () => {
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+
+  // Menú responsive
+  const toggle = document.querySelector(".menu-toggle");
+  const menu = document.getElementById("menu");
+  if (toggle && menu) {
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("open");
+    });
+  }
+});
