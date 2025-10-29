@@ -100,7 +100,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
 });
 
 // Resaltar menú según sección en viewport
-const sectionIds = ['#proyectos','#experiencia','#areas','#certificaciones','#reconocimientos','#skills','#contacto'];
+const sectionIds = ['#proyectos','#experiencia','#areas', '#servicios','#certificaciones','#reconocimientos','#skills','#contacto'];
 const links = sectionIds.map(id => [id, document.querySelector(`.menu a[href="${id}"]`)]);
 const headerEl2 = document.querySelector('.header');
 
