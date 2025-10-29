@@ -1,293 +1,181 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <title>Portafolio — Giovana Osorio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portafolio de Giovana del Carmen Osorio Segovia — Ingeniería en Computación e Informática, ciberseguridad y ciencia de datos." />
-    <link rel="stylesheet" href="./style.css" />
-    <script defer src="./script.js"></script>
-  </head>
-  <body>
-    <!-- Nav -->
-    <nav class="navbar">
-      <div class="nav-inner">
-        <a href="#home" class="brand" aria-label="Ir al inicio">Giovana Osorio</a>
-        <div class="contact_bar">
-          <a href="mailto:g.osoriosegovia@gmail.com" class="contact_link" aria-label="Enviar correo">
-            <img src="html_finalprojimages/envelope.png" alt="icono correo" />
-            g.osoriosegovia@gmail.com
-          </a>
-          <a href="https://www.linkedin.com/in/giovanaosorio" target="_blank" rel="noopener" class="contact_link">LinkedIn</a>
-          <a href="https://github.com/YobiObi" target="_blank" rel="noopener" class="contact_link">GitHub</a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio | Giovana Osorio</title>
+  <meta name="description" content="Portafolio de proyectos: desarrollo de software, ciberseguridad y ciencia de datos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2240%22 fill=%22%234cc9f0%22/></svg>">
+  <meta property="og:title" content="Portafolio | Giovana Osorio" />
+  <meta property="og:description" content="Desarrollo, ciberseguridad y ciencia de datos." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CL" />
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Giovana del Carmen Osorio Segovia",
+    "jobTitle":"Desarrolladora / Estudiante Ingeniería en Computación e Informática",
+    "email":"mailto:g.osoriosegovia@gmail.com",
+    "url":"https://tusitio-ejemplo.cl",
+    "sameAs":[
+      "https://www.linkedin.com/in/giovanaosorio",
+      "https://github.com/YobiObi"
+    ]
+  }
+  </script>
+</head>
+
+<button id="backToTop" class="back-to-top" aria-label="Volver arriba">↑</button>
+
+<body>
+  <header class="header" aria-label="Barra de navegación principal">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Ir al inicio">
+        <span class="dot" aria-hidden="true"></span>
+        <strong>Portafolio de Servicios</strong>
+      </a>
+
+      <nav class="menu" id="menu">
+        <a href="#contacto">Contacto</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#areas-interes">Áreas de interés</a>
+        <a href="#certificaciones">Certificaciones</a>
+        <a href="#reconocimientos">Reconocimientos</a>
+        <a href="#skills">Skills</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="wrap">
+    <!-- HERO -->
+    <section class="hero section" aria-labelledby="titulo-hero">
+      <div>
+        <span class="tag"><span class="pill">Santiago</span> Chile · 2025</span>
+        <div>
+          <h1 id="titulo-hero">Giovana del Carmen Osorio Segovia</h1>
+          <p class="lead">
+            Soy Estudiante de último año de <b>Ingeniería en Computación e Informática</b> en la Universidad Andrés Bello.
+            Tengo experiencia en el <b>desarrollo de soluciones de software</b> y en la <b>gestión técnica de proyectos</b>, adquirida durante mi práctica profesional en <b>Minsait Indra</b>.
+          </p>
         </div>
-        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
-        <div class="topdiv" id="menu">
-          <a class="topmenu" href="#about-me">Sobre mí</a>
-          <a class="topmenu" href="#skills">Habilidades</a>
-          <a class="topmenu" href="#interests">Áreas de interés</a>
-          <a class="topmenu" href="#docs">CV & Carta</a>
-          <a class="topmenu" href="#projects">Proyectos</a>
-          <a class="topmenu" href="#experience">Experiencia</a>
-          <a class="topmenu" href="#services">Servicios</a>
-          <a class="topmenu" href="#certs">Certificaciones</a>
-          <a class="topmenu" href="#awards">Reconocimientos</a>
-          <a class="topmenu" href="#recommendations">Recomendaciones</a>
-          <a class="topmenu" href="#contact">Contacto</a>
+        <div class="hero-actions">
+          <a class="cta" href="#proyectos">Ver proyectos</a>
+          <a class="tag link-underline" href="https://drive.google.com/file/d/1d6932swn1WIj-7e7aVWY2nhtELwy8JR0/view?usp=sharing" download>Descargar CV</a>
+          <a class="tag link-underline" href="https://drive.google.com/drive/folders/1lU6HG8WQXSxHoWPEg9HoxniBwyFCvpR3?usp=sharing" download>Carta de Presentación</a>
         </div>
       </div>
-    </nav>
 
-    <!-- Hero -->
-    <header id="home" class="hero">
-      <div class="hero-inner">
-        <div class="hero-left">
-          <!-- Pon tu foto local en img/profile.jpg o cambia el src -->
-          <img src="img/profile.jpg" alt="Foto de Giovana Osorio" class="profile_image" />
+      <!-- CONTACTO -->
+      <aside class="card heroCard" id="contacto" aria-label="Información de contacto">
+        <div class="body">
+          <h3 class="section-subtitle">Contacto</h3>
+          <div><b>Email:</b> <a href="mailto:g.osoriosegovia@gmail.com">g.osoriosegovia@gmail.com</a></div>
+          <div><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/giovanaosorio" target="_blank" rel="noopener">/in/giovanaosorio</a></div>
+          <div><b>GitHub:</b> <a href="https://github.com/YobiObi" target="_blank" rel="noopener">@YobiObi</a></div>
         </div>
-        <div class="hero-right">
-          <h1>¡Hola! Soy <span>Giovana del Carmen Osorio Segovia</span> 👋</h1>
-          <p><strong>Estudiante de Ingeniería en Computación e Informática</strong> — Santiago, Chile.</p>
-          <blockquote style="margin:0;color:#666;">
-            “Apasionada por la tecnología, la seguridad de la información y el aprendizaje continuo. Busco contribuir a la creación de soluciones tecnológicas seguras, innovadoras y de impacto real.”
-          </blockquote>
-          <div class="cta_row">
-            <a class="btn primary" href="https://drive.google.com/file/d/1d6932swn1WIj-7e7aVWY2nhtELwy8JR0/view?usp=sharing" target="_blank" rel="noopener">Descargar CV</a>
-            <a class="btn" href="https://drive.google.com/drive/folders/1lU6HG8WQXSxHoWPEg9HoxniBwyFCvpR3?usp=sharing" target="_blank" rel="noopener">Carta de presentación</a>
-            <a class="btn ghost" href="mailto:g.osoriosegovia@gmail.com">Escríbeme</a>
-            <a class="btn ghost" href="https://github.com/YobiObi" target="_blank" rel="noopener">Ver GitHub</a>
+      </aside>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="section" aria-labelledby="titulo-proyectos">
+      <div class="section-title">
+        <h2 id="titulo-proyectos">Proyectos destacados</h2>
+        <a class="link-underline" href="https://github.com/YobiObi?tab=repositories" target="_blank" rel="noopener">Ver todos →</a>
+      </div>
+      <div class="grid cols-3" id="cards-proyectos" role="list"></div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section id="experiencia" class="section" aria-labelledby="titulo-experiencia">
+      <div class="section-title"><h2 id="titulo-experiencia">Experiencia Profesional</h2></div>
+      <article class="card reveal">
+        <div class="body">
+          <h3><b>Práctica laboral</b> · Minsait Indra Sistemas Chile S.A.</h3>
+          <p class="muted">Dic 2023 – Ene 2024 · Santiago, Chile · Remoto</p>
+          <div class="timeline">
+            <div class="step">Levantamiento de requerimientos y planificación.</div>
+            <div class="step">Desarrollo con Java, Oracle y BATCH.</div>
+            <div class="step">Preparación de entornos con Control-M.</div>
+            <div class="step">Revisión de código con checklists y Kiuwan.</div>
+            <div class="step">Aprendizaje: procesos ágiles, documentación técnica y trabajo colaborativo.</div>
           </div>
         </div>
-      </div>
-    </header>
-
-    <!-- Perfil profesional -->
-    <section id="about-me" class="container">
-      <h2>Perfil profesional</h2>
-      <p>
-        Soy estudiante de último año de Ingeniería en Computación e Informática en la Universidad Andrés Bello.
-        Tengo experiencia en el desarrollo de soluciones de software y en la gestión técnica de proyectos, adquirida durante mi práctica profesional en <strong>Minsait Indra</strong>.
-        Me caracterizo por mi compromiso, responsabilidad y capacidad de aprendizaje autónomo. Actualmente busco especializarme en <strong>ciberseguridad</strong> y <strong>análisis de datos</strong>.
-      </p>
-    </section>
-
-    <!-- Habilidades -->
-    <section id="skills" class="container">
-      <h2>Habilidades</h2>
-      <div class="all_skills">
-        <div class="skill">
-          <img src="html_finalprojimages/js.jpeg" alt="Java" />
-          <h6>Java</h6>
-          <p>Base sólida</p>
-        </div>
-        <div class="skill">
-          <img src="https://th.bing.com/th/id/OIP.SklQjFRdOYBayiR9TWqi9wHaHh?rs=1&pid=ImgDetMain" alt="Python" />
-          <h6>Python</h6>
-          <p>Intermedio</p>
-        </div>
-        <div class="skill">
-          <img src="html_finalprojimages/html5.png" alt="C" />
-          <h6>C</h6>
-          <p>Intermedio</p>
-        </div>
-        <div class="skill">
-          <img src="https://clipground.com/images/sql-png-7.png" alt="SQL" />
-          <h6>SQL</h6>
-          <p>Intermedio</p>
-        </div>
-        <div class="skill">
-          <img src="https://www.pngall.com/wp-content/uploads/13/Mongodb-PNG-Image-HD.png" alt="MongoDB" />
-          <h6>MongoDB</h6>
-          <p>Intermedio</p>
-        </div>
-        <div class="skill">
-          <img src="html_finalprojimages/js.jpeg" alt="Git" />
-          <h6>Git / GitHub</h6>
-          <p>Flujo colaborativo</p>
-        </div>
-        <div class="skill">
-          <img src="html_finalprojimages/js.jpeg" alt="Herramientas" />
-          <h6>Control-M, JIRA, Kiuwan</h6>
-          <p>Experiencia práctica</p>
-        </div>
-        <div class="skill">
-          <img src="html_finalprojimages/js.jpeg" alt="Sistemas Operativos" />
-          <h6>Windows / Linux</h6>
-          <p>Uso técnico</p>
-        </div>
-        <div class="skill">
-          <img src="html_finalprojimages/js.jpeg" alt="Ciberseguridad" />
-          <h6>Ciberseguridad</h6>
-          <p>Análisis de vulnerabilidades, redes, gestión de contraseñas seguras</p>
-        </div>
-      </div>
-
-      <h2 style="margin-top:28px">Habilidades blandas</h2>
-      <div class="all_skills">
-        <div class="skill"><h6>Comunicación efectiva</h6></div>
-        <div class="skill"><h6>Trabajo en equipo</h6></div>
-        <div class="skill"><h6>Liderazgo y tutoría</h6></div>
-        <div class="skill"><h6>Adaptabilidad</h6></div>
-        <div class="skill"><h6>Responsabilidad y ética profesional</h6></div>
-      </div>
-    </section>
-
-    <!-- Áreas de interés -->
-    <section id="interests" class="container">
-      <h2>Áreas de interés</h2>
-      <ul>
-        <li>Ciberseguridad y seguridad de la información</li>
-        <li>Ciencia de datos y análisis predictivo</li>
-        <li>Infraestructura TI y soporte técnico</li>
-      </ul>
-    </section>
-
-    <!-- CV y Carta -->
-    <section id="docs" class="container">
-      <h2>Documentos</h2>
-      <div class="cta_row">
-        <a class="btn primary" href="https://drive.google.com/file/d/1d6932swn1WIj-7e7aVWY2nhtELwy8JR0/view?usp=sharing" target="_blank" rel="noopener">📄 Descargar CV actualizado</a>
-        <a class="btn" href="https://drive.google.com/drive/folders/1lU6HG8WQXSxHoWPEg9HoxniBwyFCvpR3?usp=sharing" target="_blank" rel="noopener">✉️ Ver carta de presentación</a>
-      </div>
-    </section>
-
-    <!-- Proyectos -->
-    <section id="projects" class="projects container">
-      <h2>Proyectos destacados</h2>
-      <div class="projects-container">
-        <article class="project-card">
-          <h3>Automatización Atención al Estudiante en CIADE UNAB</h3>
-          <ul>
-            <li>Plataforma para gestionar solicitudes de cita de estudiantes hacia CIADE UNAB, mejorando trazabilidad y tiempos de respuesta.</li>
-            <li><strong>Tecnologías:</strong> React, Node.js, Express, PostgreSQL, Prisma, Firebase Auth.</li>
-            <li><strong>Rol:</strong> Desarrolladora full stack — <strong>Resultados:</strong> chatbot, paneles de gestión, autenticación y notificaciones.</li>
-            <li><a href="https://github.com/YobiObi/ChatbotCIADE" target="_blank" rel="noopener">Ver repositorio</a></li>
-          </ul>
-        </article>
-        <hr />
-        <article class="project-card">
-          <h3>ComuniRed App</h3>
-          <ul>
-            <li>App para condominios/villas: comunicación entre directiva, conserjes y residentes.</li>
-            <li><strong>Tecnologías:</strong> React Native, Node.js, MongoDB, Tailwind.</li>
-            <li><strong>Rol:</strong> Desarrolladora principal y analista de requerimientos — <strong>Resultados:</strong> reservas, avisos y reportes.</li>
-            <li><a href="https://github.com/legitpotato/Prototipo-ING-2" target="_blank" rel="noopener">Ver repositorio</a></li>
-          </ul>
-        </article>
-        <hr />
-        <article class="project-card">
-          <h3>Proyecto de Ciencia de Datos – Predicción de Diabetes Tipo II</h3>
-          <ul>
-            <li>3° lugar en Olimpiadas de Ciencias de Datos (2024).</li>
-            <li><strong>Tecnologías:</strong> R, Regresión logística, Redes Neuronales.</li>
-            <li><strong>Rol:</strong> Analista de datos — <strong>Resultados:</strong> modelo con 85% de precisión.</li>
-            <li><a href="https://github.com/YobiObi/Proyecto-Ciencia-de-Datos" target="_blank" rel="noopener">Ver repositorio</a></li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <!-- Experiencia -->
-    <section id="experience" class="container">
-      <h2>Experiencia profesional</h2>
-      <article class="project-card">
-        <h3>Minsait Indra Sistemas Chile S.A.</h3>
-        <p>📅 Diciembre 2023 – Enero 2024</p>
-        <h4>Actividades realizadas</h4>
-        <ul>
-          <li>Levantamiento de requerimientos y planificación de proyectos.</li>
-          <li>Desarrollo con <strong>Java, Oracle y BATCH</strong>.</li>
-          <li>Preparación de entornos de certificación y producción con <strong>Control-M</strong>.</li>
-          <li>Revisión de código con checklists y análisis de calidad con <strong>Kiuwan</strong>.</li>
-        </ul>
-        <h4>Aprendizajes clave</h4>
-        <p>Procesos ágiles, documentación técnica y trabajo colaborativo en equipos multidisciplinarios.</p>
       </article>
     </section>
 
-    <!-- Servicios -->
-    <section id="services" class="container">
-      <h2>Servicios profesionales</h2>
-      <ul>
-        <li>Desarrollo de aplicaciones web y backend</li>
-        <li>Análisis y visualización de datos</li>
-        <li>Pruebas funcionales y aseguramiento de calidad</li>
-        <li>Soporte técnico y automatización de procesos</li>
-        <li>Asistencia en proyectos de ciberseguridad y análisis de vulnerabilidades</li>
-      </ul>
-    </section>
-
-    <!-- Certificaciones -->
-    <section id="certs" class="container">
-      <h2>Certificaciones y cursos</h2>
-      <ul>
-        <li>Cisco Networking Academy: CCNA: Switching, Routing and Wireless Essentials (2025)</li>
-        <li>Cisco Networking Academy: CyberOps Associate (en curso)</li>
-        <li>IBM Coursera: Data Science &amp; AI Developer (2025)</li>
-        <li>Coursera: Big Data y su impacto en la sociedad actual (2024)</li>
-      </ul>
-    </section>
-
-    <!-- Reconocimientos -->
-    <section id="awards" class="container">
-      <h2>Reconocimientos</h2>
-      <ul>
-        <li>3° lugar en Olimpiadas de Ciencias de Datos (2024)</li>
-        <li>Mentora CIADE y ayudante en la Universidad Andrés Bello (2023–2025)</li>
-      </ul>
-    </section>
-
-    <!-- Recomendaciones -->
-    <section id="recommendations" class="container">
-      <h2>Recomendaciones</h2>
-      <div class="all_recommendations" id="all_recommendations">
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Giovana trabaja muy bien en equipo, mantiene comunicación constante y cumple plazos con responsabilidad.
-          <span>&#8221;</span>
-        </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Durante su práctica se destacó por su proactividad y calidad de entrega.
-          <span>&#8221;</span>
-        </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Lideró proyectos académicos con muy buen desempeño y foco en resultados.
-          <span>&#8221;</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Formulario -->
-    <section id="contact" class="container">
-      <h2>Contacto</h2>
-      <div class="flex_center">
-        <fieldset>
-          <legend class="introduction">Deja una recomendación</legend>
-          <label for="name" class="sr-only">Nombre</label>
-          <input id="name" type="text" placeholder="Nombre (opcional)" />
-          <label for="new_recommendation" class="sr-only">Mensaje</label>
-          <textarea id="new_recommendation" rows="6" placeholder="Mensaje"></textarea>
-          <div class="flex_center">
-            <button id="recommend_btn" type="button" onclick="addRecommendation()">Enviar</button>
+    <!-- AREAS DE INTERÉS -->
+    <section id="areas-interes" class="section" aria-labelledby="titulo-interes">
+      <div class="section-title"><h2 id="titulo-interes">Áreas de Interés</h2></div>
+      <div class="grid">
+        <div class="card reveal">
+          <div class="body">
+            <ul class="list">
+              <li><b>Ciberseguridad y seguridad de la información</b></li>
+              <li><b>Ciencia de datos y análisis predictivo</b></li>
+              <li><b>Infraestructura TI y soporte técnico</b></li>
+            </ul>
           </div>
-        </fieldset>
+        </div>
       </div>
     </section>
 
-    <!-- Scroll top -->
-    <button class="iconbutton" aria-label="Volver arriba" onclick="window.scrollTo({top:0, behavior:'smooth'})">↑</button>
+    <!-- CERTIFICACIONES -->
+    <section id="certificaciones" class="section" aria-labelledby="titulo-certi">
+      <div class="section-title"><h2 id="titulo-certi">Certificaciones y cursos</h2></div>
+      <div class="grid">
+        <div class="card reveal">
+          <div class="body">
+            <div class="timeline">
+              <div class="step">Ingeniería en Computación e Informática · <b>último semestre</b></div>
+              <div class="step">CyberOps Associate <b>(en curso)</b></div>
+              <div class="step">CCNA: Switching, Routing and Wireless Essentials <b>(2025)</b></div>
+              <div class="step">IBM Data Science & AI Developer <b>(2025)</b></div>
+              <div class="step">Big Data y su impacto en la sociedad actual <b>(2024)</b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Popup -->
-    <div class="popup" id="popup" role="dialog" aria-modal="true" aria-labelledby="popup-title" aria-hidden="true">
-      <img src="html_finalprojimages/checkmark--outline.svg" alt="" />
-      <h3 id="popup-title">¡Gracias por tu recomendación!</h3>
-      <button type="button" onclick="showPopup(false)">Ok</button>
-    </div>
+    <!-- RECONOCIMIENTOS -->
+    <section id="reconocimientos" class="section" aria-labelledby="titulo-recon">
+      <div class="section-title"><h2 id="titulo-recon">Reconocimientos</h2></div>
+      <div class="grid">
+        <div class="card reveal">
+          <div class="body">
+            <div class="timeline">
+              <div class="step"><b>Ayudante y Tutora</b> · Universidad Andrés Bello — <small>2023–2025</small><br/>Organización de clases grupales e individuales de apoyo.</div>
+              <div class="step"><b>3° lugar en Olimpiadas de Ciencias de Datos</b> — <small>2023</small><br/>Predicción de diabetes tipo II con regresión logística y redes neuronales.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <footer class="footer">
-      <p>© <span id="year"></span> Giovana Osorio — Santiago, Chile</p>
-    </footer>
-  </body>
+    <!-- SKILLS -->
+    <section id="skills" class="section" aria-labelledby="titulo-skills">
+      <div class="section-title"><h2 id="titulo-skills">Skills</h2></div>
+      <div class="grid cols-3">
+        <div class="card reveal"><div class="body"><span class="badge">Habilidades blandas</span><div class="stack"><span>Responsable </span>·<span>Comunicación efectiva</span>·<span>Trabajo en equipo</span>·<span>Adaptable al cambio</span>·<span>Liderazgo</span></div></div></div>
+        <div class="card reveal"><div class="body"><span class="badge">Frontend</span><div class="stack"><span>React</span>·<span>Next.js</span>·<span>Tailwind</span>·<span>Vite</span></div></div></div>
+        <div class="card reveal"><div class="body"><span class="badge">Backend</span><div class="stack"><span>Node</span>·<span>Express</span>·<span>Prisma</span>·<span>PostgreSQL</span></div></div></div>
+        <div class="card reveal"><div class="body"><span class="badge">Data/BI</span><div class="stack"><span>Python</span>·<span>Pandas</span>·<span>Power BI</span>·<span>SQL</span></div></div></div>
+        <div class="card reveal"><div class="body"><span class="badge">Redes</span><div class="stack"><span>VLAN</span>·<span>OSPF</span>·<span>ACL</span>·<span>IPv4/IPv6</span></div></div></div>
+        <div class="card reveal"><div class="body"><span class="badge">Herramientas</span><div class="stack"><span>Git</span>·<span>GitHub</span>·<span>Jira</span>·<span>Trello</span>·<span>Canva</span></div></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">© 2025 · Portafolio de Servicios. Todos los derechos reservados.</div>
+  </footer>
+
+  <script src="./script.js" defer></script>
+</body>
 </html>
